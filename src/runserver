@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo rm mailserver/*.class
+sudo javac -cp mailserver/org.xbill.dns_2.1.6.jar mailserver/*.java
+sudo java -cp .:mailserver/org.xbill.dns_2.1.6.jar mailserver/HttpServer
